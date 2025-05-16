@@ -9,12 +9,12 @@
 
   <style>
     body.dark-mode{
-      background-color: #121212;
+      background-color: #111111;
       color: #ffffff;
     }
 
     .dark-mode .bg-primary {
-      background-color: #1a1a1a;
+      background-color: #111111;
     }
 
     .dark-mode .btn{
@@ -35,8 +35,23 @@
   }
 
   body.dark-mode .profile-img {
-    background-color: #1e1e1e;
+    background-color: #000000;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  body.dark-mode .bg-light {
+  background-color: #000000 !important;
+  color: #ffffff;
+  }
+
+  body.dark-mode .card {
+    background-color: #111111;
+    color: #fff;
+  }
+
+  body.dark-mode .card .btn {
+    background-color: #333;
+    color: #fff;
   }
 
   </style>
@@ -44,102 +59,146 @@
 </head>
 <body>
 
-<div class="p-2 bg-dark text-white text-center">
-  <h1>Samarventhan Surendran's</h1> 
-  <h1>Portfolio</h1> 
-  <div class="position-absolute top-0 end-0 p-3">
-  <button id="theme" class="btn btn-light">Dark Mode</button>
+
+<div class="bg-dark text-white py-2">
+  <div class="container-fluid">
+    <div class="row">
+
+      <!--Navigation-->
+      <div class="col-4">
+        <ul class="nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#AB">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#HIW">How I Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#CS">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Title-->
+      <div class="col-4 text-center">
+        <h1 class="mb-2">Samarventhan's Portfolio</h1>
+      </div>
+
+      <!--Dark mode-->
+      <div class="col-4 text-end pe-3 mt-2">
+        <button id="theme" class="btn btn-light">Dark Mode</button>
+      </div>
+    </div>
   </div>
 </div>
 
 
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card shadow-sm mb-4">
-        <div class="card-body">
-          <h4 class="card-title mb-3">Navigation</h4>
-          <p class="card-text text-muted">Navigate to different sections of the site:</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <a class="text-decoration-none" href="#">About Me</a>
-            </li>
-            <li class="list-group-item">
-              <a class="text-decoration-none" href="#">Projects</a>
-            </li>
-            <li class="list-group-item">
-              <a class="text-decoration-none" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+
+   <!--About Me-->
+  <div id="AB" class="p-4 mb-5 bg-light rounded shadow">
+    <h1 class="text-center mb-4">About Me</h1>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <img src="images/ME.jpg" alt="Photo of Me" class="img-fluid rounded" style="width: 400px; height: 300">
       </div>
+      <div class="col-md-8 fs-4">
+        <p>Hello! My name is Samarventhan Surendran, and I’m a second-year Software Engineering student with CO-OP at the University of Ottawa. I’ve always been passionate about technology and problem-solving, and recently I’ve grown to develop an interest in design and user experience. Outside of academics, I enjoy working on side projects, volunteering in my community, and being involved with student organizations. I’m also a co-founder of the uOttawa Tamil Alliance of Networking (UTAN), where we build community among Tamil students through professional development and cultural engagement.</p>
+      </div>
+    </div>
   </div>
-   <!-- About Me -->
-    <div class="col-sm-8">
-      <h2>About Me</h2>
-      <img src="images/ME.jpg" alt="Photo of Me" class="img-fluid rounded img">
-      <p>My name is Samarventhan Surendran, and I’m a Third-year Software Engineering student with CO-OP at the University of Ottawa. I’ve always been passionate about technology and problem-solving, and recently I’ve grown more interested in the intersection of design and user experience. Outside of academics, I enjoy working on side projects, volunteering in my community, and being involved with student organizations.</p>
- <!-- How I work -->
-      <h2 class="mt-5">How I work</h2>
-      <img src="images/HIW.jpg" alt="How I Work" class="img-fluid rounded img" style="width: 500px; height: 300;">
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
+      <!--How I work-->
+<div id="HIW" class="p-4 bg-light rounded shadow">
+  <h2 class="text-center mb-4">How I Work</h2>
+  <div class="row align-items-center">
+    <div class="col-md-8 fs-5">
+      <p>
+        I am currently taking a SEG 3125 which is a UI Design course where I am learning the foundational elements of user interface and user experience design. Through this course, I’ve been exploring design elements and principles such as Scale, Visual hierarchy, Balance, Contrast and Gestalt.
+      </p>
+
+      <div class="d-flex align-items-center gap-3 mt-3 flex-wrap">
+      <p>
+        The resources I'm using to improve my skills are:
+      </p>
+        <a href="https://www.nngroup.com/" target="_blank">
+        <img src="images/NNG.jpg" alt="NNG Group Logo" title="NNG Group" class="img-fluid rounded" style="height: 40px;" >
+        </a>
+        <a ref="https://www.w3schools.com/" target="_blank">
+        <img src="images/W3S.jpg" alt="W3Schools Logo" title="W3Schools" class="img-fluid rounded" style="height: 40px;">
+        </a>
+        <a href="https://www.youtube.com/@NetNinja" target="_blank">
+        <img src="images/NN.jpg"  alt="Net Ninja Logo" title="Net Ninja" class="img-fluid rounded" style="height: 40px;">
+        </a>
+      </div>
+
+      
+    </div>
+    
+    <div class="col-md-4 text-center mb-3 mb-md-0">
+      <img src="images/HIW.jpg" alt="How I Work" class="img-fluid rounded" style="width: 400px; height: 300px;">
     </div>
   </div>
 </div>
 
-<div class="container mt-5">
-  <h2>Projects (Case Studies)</h2>
-  <div class="row">
-  <!-- Case study 1 -->
-    <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/Pro1.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h5 class="card-title">Project 1</h5>
-          <p class="card-text">Description of the project.</p>
-          <a href="#" target="_blank" class="btn btn-dark">View Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Case study 2 -->
-     <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/Pro1.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h5 class="card-title">Project 2</h5>
-          <p class="card-text">Description of the project.</p>
-          <a href="#" target="_blank" class="btn btn-dark">View Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Case study 3 -->
-     <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/Pro1.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h5 class="card-title">Project 3</h5>
-          <p class="card-text">Description of the project.</p>
-          <a href="#" target="_blank" class="btn btn-dark">View Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Case study 4 -->
-     <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/Pro1.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h5 class="card-title">Project 4</h5>
-          <p class="card-text">Description of the project.</p>
-          <a href="#" target="_blank" class="btn btn-dark">View Project</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+
+<div id="CS" class="container mt-5">
+  <div id="AB" class="p-4 mb-5 bg-light rounded shadow">
+    <h3 class="text-center p-4">Projects (Case Studies)</h3>
+    <div class="row">
+    <!--Case study 1-->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Pro1.jpg" class="card-img-top" alt="Service Site" title="Coming soon">
+          <div class="card-body">
+            <h5 class="card-title">Service Site</h5>
+            <p class="card-text">Description of the project.</p>
+            <a href="#" class="btn btn-dark">Coming soon</a>
+          </div>
+        </div>
+      </div>
+      <!--Case study 2-->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Pro1.jpg" class="card-img-top" alt="Game" title="Coming soon">
+          <div class="card-body">
+            <h5 class="card-title">Game</h5>
+            <p class="card-text">Description of the project.</p>
+            <a href="#"  class="btn btn-dark">Coming soon</a>
+          </div>
+        </div>
+      </div>
+      <!--Case study 3-->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Pro1.jpg" class="card-img-top" alt="E-commerce Site" title="Coming soon">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce Site</h5>
+            <p class="card-text">Description of the project.</p>
+            <a href="#" class="btn btn-dark">Coming soon</a>
+          </div>
+        </div>
+      </div>
+      <!--Case study 4-->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Pro1.jpg" class="card-img-top" alt="Analytics Site" title="Coming soon">
+          <div class="card-body">
+            <h5 class="card-title">Analytics Site</h5>
+            <p class="card-text">Description of the project.</p>
+            <a href="#" class="btn btn-dark">Coming soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
+  <p>Samarventhan Surendran - ssure086@uottawa.ca - 300376981</p>
 </div>
 
 <script>
@@ -147,6 +206,7 @@
 
   if (localStorage.getItem("theme") == "dark"){
     document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "Light Mode";
   }
 
   toggleBtn.addEventListener("click", function () {
@@ -154,9 +214,11 @@
 
     if (document.body.classList.contains("dark-mode")) {
       localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "Light Mode";
 
     } else {
       localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "Dark Mode";
     }
   }
   )
